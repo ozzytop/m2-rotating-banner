@@ -1,0 +1,18 @@
+<?php
+$helper = $this->helper('Ozzytop\Banner\Helper\Data');
+?>
+
+<div class="rotating-banner">
+    <?php if ($helper->isLoggedIn()): ?>
+        <div class="rotating-banner__message rotating-banner__message-logged-in">
+            You are logged in
+        </div>
+    <?php else: ?>
+        <div class="rotating-banner__message rotating-banner__message-logged-out">
+            You are logged out
+        </div>
+    <?php endif; ?>
+</div>
+
+
+
